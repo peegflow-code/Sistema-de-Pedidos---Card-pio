@@ -265,12 +265,13 @@ else:
         m_id = st.text_input("Identificador da Mesa", "01")
 
         if st.button("Gerar Código"):
-            url = f"https://sistema-de-comandas-3bvbpkpawaa5pkbfuptqef.streamlit.app/?cid=1&mesa={m_id}"
+            url = f"https://sistema-de-pedidos---card-pio-kbcbnb79qnmuptkty3uesm.streamlit.app/?cid=1&mesa={m_id}"
             qr = qrcode.make(url)
             buf = BytesIO()
             qr.save(buf, format="PNG")
 
             st.image(buf.getvalue(), caption=f"Mesa {m_id}")
             st.markdown(f"**Link:** `{url}`")
+
 
 
