@@ -109,8 +109,6 @@ params = st.query_params
 # =========================
 if "cid" in params:
 
-    st.markdown(
-
    col1, col2, col3 = st.columns([1,2,1])
    with col2:
     st.image("logo.jpeg", width=180)
@@ -272,6 +270,7 @@ else:
 
             st.image(buf.getvalue(), caption=f"Mesa {m_id}")
             st.markdown(f"**Link:** `{url}`")
+
 
 
 
