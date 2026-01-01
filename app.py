@@ -109,15 +109,15 @@ params = st.query_params
 # =========================
 if "cid" in params:
 
-   col1, col2, col3 = st.columns([1,2,1])
-   with col2:
-    st.image("logo.jpeg", width=180)
-    )
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("logo.jpeg", width=180)
 
     st.markdown(
         f"<h2 style='text-align:center;'>PeegFlow <span style='color:{COLOR_ACCENT}'>Food</span></h2>",
         unsafe_allow_html=True
     )
+
     st.markdown(
         f"<p style='text-align:center;'>Mesa {params['mesa']} | Experiência Digital</p>",
         unsafe_allow_html=True
@@ -270,6 +270,7 @@ else:
 
             st.image(buf.getvalue(), caption=f"Mesa {m_id}")
             st.markdown(f"**Link:** `{url}`")
+
 
 
 
