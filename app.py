@@ -12,7 +12,7 @@ COLOR_GOLD = "#ffc107"
 BACKGROUND_LIGHT = "#f8f9fa"
 
 st.set_page_config(
-    page_title="PeegFlow | Intelligence",
+    page_title=" | Intelligence",
     layout="wide",
     page_icon="logo.jpeg"
 )
@@ -187,11 +187,11 @@ else:
             "📊 Monitor de Pedidos",
             "🍴 Gestão de Cardápio",
             "🖨️ QR Mesa",
-            "⚙️ Setup PeegFlow",
+            "⚙️ Configurações",
         ],
     )
 
-    if menu == "⚙️ Setup PeegFlow":
+    if menu == "⚙️ Configurações":
         st.title("⚙️ Configuração Inicial")
         st.info("Bem-vindo ao motor de inteligência PeegFlow.")
 
@@ -270,6 +270,7 @@ else:
 
             st.image(buf.getvalue(), caption=f"Mesa {m_id}")
             st.markdown(f"**Link:** `{url}`")
+
 
 
 
